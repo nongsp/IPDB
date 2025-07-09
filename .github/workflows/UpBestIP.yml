@@ -1,6 +1,8 @@
 name: 更新 UpBestIP
 
 on:
+schedule:
+    - cron: '0 3 * * *'   # 每天凌晨3点自动执行（可根据需要调整时间）
   push:
     branches: [ main ]
     paths:
