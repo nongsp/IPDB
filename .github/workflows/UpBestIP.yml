@@ -1,4 +1,4 @@
-name: 更新 UpBestIP
+name: 更新IP UpBestIP
 
 on:
   schedule:
