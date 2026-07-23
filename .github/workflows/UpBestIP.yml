@@ -1,6 +1,7 @@
 name: 更新 UpBestIP
 
 on:
+ - cron: '0 */2 * * *'    # 每天00:00 UTC运行
   push:
     branches: [ main ]
     paths:
@@ -18,11 +19,11 @@ jobs:
     steps:
       # 检出仓库代码
       - name: 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # 设置 Python 环境
       - name: 设置 Python 环境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'  # 可根据需要指定 Python 版本，例如 3.8
 
