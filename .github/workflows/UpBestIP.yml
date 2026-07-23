@@ -1,7 +1,8 @@
 name: 更新 UpBestIP
 
 on:
- - cron: '0 */2 * * *'    # 每天00:00 UTC运行
+  schedule:
+  - cron: '0 */2 * * *'    # 每天00:00 UTC运行
   push:
     branches: [ main ]
     paths:
